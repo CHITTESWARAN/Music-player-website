@@ -1,6 +1,24 @@
 let progress = document.getElementById("progress");
 let song = document.getElementById("song");
 let ctrIcon = document.getElementById("ctrIcon");
+let circle = document.querySelector(".circle");
+document.addEventListener("DOMContentLoaded", function() {
+   
+
+    // Check if the song element exists
+    if (song) {
+        // Pause the song when the page is loaded
+        song.pause();
+
+        // Check if the song was playing before the page is redirected
+        window.onbeforeunload = function() {
+            if (!song.paused) {
+                song.pause();
+            }
+        };
+    }
+});
+
 
 song.addEventListener("loadedmetadata", function() {
     progress.max = song.duration; 
@@ -30,4 +48,6 @@ progress.onchange=function(){
     ctrIcon.classList.remove("fa-play");
     ctrIcon.classList.add("fa-pause");
 }
-
+circle.addEventListener("click", function() {
+    window.open("aindex.html", "_blank");
+});
