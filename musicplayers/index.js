@@ -38,6 +38,7 @@ function playPause() {
        
     }
 }
+
 if(song.play()){
    setInterval(()=>{
     progress.value=song.currentTime},100) 
