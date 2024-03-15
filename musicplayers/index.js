@@ -1,5 +1,7 @@
 let progress = document.getElementById("progress");
 let song = document.getElementById("song");
+let forwardButton=document.getElementById("forwardButton");
+let backwardButton=document.getElementById("backwardButton");
 let ctrIcon = document.getElementById("ctrIcon");
 let circle = document.querySelector(".circle");
 document.addEventListener("DOMContentLoaded", function() {
@@ -50,5 +52,17 @@ progress.onchange=function(){
     ctrIcon.classList.add("fa-pause");
 }
 circle.addEventListener("click", function() {
+    song.pause();
+    ctrIcon.classList.remove("fa-pause");
+        ctrIcon.classList.add("fa-play");
     window.open("aindex.html", "_blank");
 });
+
+
+forwardButton.addEventListener("click",function(){
+    song.currentTime -= 10;
+})
+backwardButton.addEventListener("click",function(){
+    
+      song.currentTime += 10;
+})

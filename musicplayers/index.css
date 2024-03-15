@@ -17,7 +17,7 @@
     background-color: rgb(19, 2, 1);
 }
 body {
-    background: rgb(151, 151, 218);
+    background: rgb(12, 165, 48);
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -107,12 +107,11 @@ border-radius: 40px;
     max-width: 300px;
     padding: 10px;
     overflow: hidden;
-    background-color:rgba(24, 4, 23, 0.711);
-    color: black;
+    background-color:rgb(3, 3, 28);
+    color: whitesmoke;
     border-radius: 28px;
     max-width: 300px;
     margin: 18px;
-    align-items: last baseline;
     text-align: center;   
 
 }
