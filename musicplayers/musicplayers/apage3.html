@@ -12,24 +12,27 @@
     <div class="music-player">
         <nav>
             <div class="circle">
-                <i class="fa-solid fa-angle-left" ></i>
+               
+                 <i class="fa-solid fa-angle-left" id="greaterthan" ></i>
+               
             </div>
             <div class="circle">
                 <i class="fa-solid fa-bars"></i>
             </div>  
            
         </nav>
-        <img src="images/468-thumbnail.png" class="song-img">
-        <h1>AR RAGUMAN</h1>
-        <p>Kanmani Anbodu</p>
+        <img src="/images/image.png" class="song-img">
+        <h1>Mohan Rajan</h1>
+        <p>Naan Gaali</p>
         <audio id="song">
-            <source src="music/Kanmani Anbodu – Guna Movie _ Tamil Ringtone - MobCup.Com.Co.mp3" type="audio/mpeg">
+            <source src="/musicplayers/music/Naan Gaali Ringtone Download Naa Songs - MobCup.Com.Co.mp3" type="audio/mpeg">
         </audio>
+        
         <input type="range" value="0" id="progress">
         <div class="controls">
-            <div><i class="fa-solid fa-backward"></i></div>
+            <div><i class="fa-solid fa-backward" id="forwardButton"></i></div>
              <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrIcon"></i></div> 
-             <div><i class="fa-solid fa-forward"></i></div> 
+             <div><i class="fa-solid fa-forward" id="backwardButton"></i></div> 
         </div>
 
     </div>
