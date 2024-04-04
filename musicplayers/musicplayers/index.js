@@ -19,6 +19,10 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         };
     }
+    let contactButton = document.querySelector('.contact');
+    contactButton.addEventListener("click", function() {
+        window.open("Contact.html", "_blank");
+    });
 });
 
 
